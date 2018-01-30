@@ -7,12 +7,11 @@ import App from './App';
 import { Provider } from 'react-redux'
 import configStore from './configStore'
 import registerServiceWorker from './registerServiceWorker';
+import 'font-awesome/css/font-awesome.css';
 
-let store = configStore();
+
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+        <App />,
     document.getElementById('root'));
 registerServiceWorker();
